@@ -1,0 +1,33 @@
+@mixin col($size) {
+    flex: 0 0 auto;
+    width: calc(#{percentage($size / $grid-columns)} - #{$grid-gap});
+}
+
+
+@mixin media($width){
+    @media (min-width: $width){
+        @content;
+    }
+}
+
+@mixin br($name){
+    $width: map-get($grid-breakpoints, $name);
+    @include media($width){
+        @content;
+    }
+}
+
+@mixin circle($width) {
+    width: $width;
+    height: $width;
+    border-radius: $width/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+@mixin font-description($font-weight,$font-size,$line-height){
+    font-weight: $font-weight;
+font-size: $font-size;
+line-height: $line-height;
+}

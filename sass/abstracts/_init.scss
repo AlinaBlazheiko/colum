@@ -1,0 +1,38 @@
+@import "all";
+
+.container{
+    margin: 0 auto;
+    max-width: $container-max-width;
+    padding-left: $grid-gap-side;
+    padding-right: $grid-gap-side;
+}
+.row{
+    display: flex;
+     align-items: center;
+    flex-wrap: wrap;
+    margin-left: -$grid-gap-side;
+    margin-right: -$grid-gap-side;
+     
+    > * {
+        margin-left: $grid-gap-side;
+        margin-right: $grid-gap-side;
+    }
+    &_revers{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.col{
+    flex: 1 0 0%; 
+}
+
+@each $br, $width in $grid-breakpoints{
+    @include media($width){
+       @for $i from 1 through $grid-columns {
+    .col-#{$br}-#{$i} {
+      @include col($i);
+    }
+   }  
+  }
+}

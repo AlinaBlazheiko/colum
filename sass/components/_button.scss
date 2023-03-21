@@ -1,0 +1,60 @@
+.header__buttons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.button{
+font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  width: 200px;
+  display: block;
+  color: white;
+  
+  border: none;
+  box-shadow: none;
+  background: none;
+  
+  border-radius: 4px;
+  transition: background-color .35s ease;
+  transition: color ;
+  }
+.button_border{
+  line-height: 24px;
+  color: white;
+  border: 1px solid white;
+}
+.button_border:hover{
+  background-color:$color-purple;
+  border: 1px solid $color-purple;
+}
+.button_primary{
+color: #FFFFFF;
+font-size: 18px;
+  line-height: 27px;
+   background-color: $color-purple;
+   border: 1px solid $color-purple;
+  }
+  .button-pimary:hover{
+      color:$color-purple;
+      background-color:transparent;
+  }
+
+  .btn{
+    display: flex;
+border-radius: 3px;
+max-width: 100px;
+  padding: 10px;
+  color: #F18200;
+  background-color:  #FFFADE;
+
+}  
+.btn_green{
+    background-color: rgba(165, 235, 183, 0.32);
+}
+.btn_pink{
+  background-color: rgba(255, 124, 124, 0.28);
+}

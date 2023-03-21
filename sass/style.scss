@@ -1,0 +1,246 @@
+@import "./base/reset";
+@import "./abstracts/init";
+@import "./abstracts/all";
+@import "./components/button";
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     background: url(/img/begraund.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+    
+  .hero__title{
+    @include  font-description( 700,50px,61px);
+   color: #FFFFFF; 
+} 
+.hero__desc{
+    @include  font-description(700,18px,22px);
+}
+}
+.page{
+    margin-bottom: 150px;
+    margin-top: 25px;
+.page__title{
+    @include  font-description( 900,48px,58px);
+margin: 30px 0;
+}
+}
+.main{
+ 
+     background-size: cover ;
+     min-height: 100vh;
+    
+}
+.header{
+    position: absolute;
+      padding-top: $grid-gap;
+      padding-bottom: $grid-gap;
+      top: 0px; 
+      left: 0px;   
+      width: 100%;
+}
+.logo{
+@include  font-description( 900,28px,124.5%);
+    display: block;
+
+    color: 
+    #FFFFFF;
+  
+}  
+.logo span {
+display: block;
+text-align: center;
+
+   }
+.logo_subtitle{
+    @include  font-description( 700,12px,124.5%);
+    
+}
+
+.row__revers{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.section{
+    margin-top: 35px;
+}
+.card__button{
+    justify-content: flex-end;
+    margin-top: 35px;
+}
+.circle-img{
+    border-radius: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.circle {
+@include circle(430px);
+}
+.circle_yellow{
+    background: linear-gradient(133.84deg, #F0F483 12.26%, #FEC070 88.97%);
+}
+.circle_pink{
+background: linear-gradient(133.84deg, #F483A3 12.26%, #C670FE 88.97%);
+}
+.circle_green{
+     background: linear-gradient(133.84deg, #9FE8A2 12.26%, #62CDB8 88.97%)
+}
+.caption{
+ @include  font-description( 900,62px,75px);
+margin-top: 100px;
+text-align: center;
+padding-bottom: 150px;
+  .caption__oposit{
+ 
+    background-color:$color-purple;
+    color: #FFFFFF;
+    padding: 10px;
+}
+}
+.desc{
+font-size: 14px;
+line-height: 17px; 
+color: #F18200;
+padding-left: 10px;
+}
+.desc_green{
+  color: #60C5AB;
+}
+.desc_pink{
+ color: #FC7D88;
+}
+.subtitle{
+  @include  font-description( 400,18px,28px);
+  
+}
+.section__subtitle{
+  display:inline-flex;
+}
+.section__img{
+    padding-right:10px ;
+}
+.card{
+    background-color: white;
+    padding: 50px 25px;
+    border-radius: 10px;
+.card__desc{
+    @include  font-description( 400,12px,15px);
+color: $color-purple;
+}
+}
+.card__row{
+    margin-top: 30px;
+}
+.input{
+    margin-top: 10px;
+     padding: 12px 20px 12px 40px;
+     width: 100%;
+     background-color: #EFEFEF;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+.input_arrival{
+    background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+}
+.input_inventory{
+    background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+}
+.input_event{
+    background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+}
+
+
+
+.footer{
+    background-color: #101010;
+
+}
+.footer__row{
+padding-top: 160px ;
+padding-bottom: 315px;
+
+}
+.text{
+    @include  font-description( 400,13px,124.5%);
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    margin-top: 40px;
+}
+
+.menu__link_lead {
+    @include  font-description( 700,20px,124.5%);
+    font-family: 'Poppins';
+    color: #FFFFFF;
+}
+.menu__link{
+    color: #8D8D8D;
+}
+
+.menu__item{
+    @include  font-description( 400,16px,124.5%);
+    margin-top: 20px;
+ 
+}
+
+.media{
+    display: flex;
+    gap: 30px;
+}
+@media screen and (min-width: 576px) {
+    .hero__title   {
+      
+       margin-bottom: 50px;
+    }
+    .media{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .app  .app-save  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+   
+}
+
+.media__link{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+   
+    border-radius: 100%;
+ }
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+.app-save{
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 10px;
+}
+.app__img{
+    width: 100px;
+}
