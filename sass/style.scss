@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-     background: url(/img/begraund.jpg);
+     background: url(../img/begraund.jpg);
      background-repeat: no-repeat;
      background-size: cover;
 
@@ -143,20 +143,20 @@ color: $color-purple;
     border-radius: 10px;
     border: none;
     outline: none;
-    background-image: url(/img/flight_takeoff_black_24dp.svg)  ;
+    background-image: url(../img/flight_takeoff_black_24dp.svg)  ;
     background-position: 10px 50%;
     background-repeat: no-repeat;
     background-size: 24px 24px;
 }
 
 .input_arrival{
-    background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+    background-image: url(../img/flight_land_black_24dp\ 1\ \(1\).svg);
 }
 .input_inventory{
-    background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+    background-image: url(../img/inventory_2_black_24dp\ 1\ \(1\).svg);
 }
 .input_event{
-    background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+    background-image: url(../img/event_black_24dp\ 1\ \(1\).svg);
 }
 
 
