@@ -64,6 +64,56 @@ img {
 }
 
 @media (min-width: 0) {
+  .col-xxs-1 {
+    flex: 0 0 auto;
+    width: calc(8.3333333333% - 40px);
+  }
+  .col-xxs-2 {
+    flex: 0 0 auto;
+    width: calc(16.6666666667% - 40px);
+  }
+  .col-xxs-3 {
+    flex: 0 0 auto;
+    width: calc(25% - 40px);
+  }
+  .col-xxs-4 {
+    flex: 0 0 auto;
+    width: calc(33.3333333333% - 40px);
+  }
+  .col-xxs-5 {
+    flex: 0 0 auto;
+    width: calc(41.6666666667% - 40px);
+  }
+  .col-xxs-6 {
+    flex: 0 0 auto;
+    width: calc(50% - 40px);
+  }
+  .col-xxs-7 {
+    flex: 0 0 auto;
+    width: calc(58.3333333333% - 40px);
+  }
+  .col-xxs-8 {
+    flex: 0 0 auto;
+    width: calc(66.6666666667% - 40px);
+  }
+  .col-xxs-9 {
+    flex: 0 0 auto;
+    width: calc(75% - 40px);
+  }
+  .col-xxs-10 {
+    flex: 0 0 auto;
+    width: calc(83.3333333333% - 40px);
+  }
+  .col-xxs-11 {
+    flex: 0 0 auto;
+    width: calc(91.6666666667% - 40px);
+  }
+  .col-xxs-12 {
+    flex: 0 0 auto;
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 390px) {
   .col-xs-1 {
     flex: 0 0 auto;
     width: calc(8.3333333333% - 40px);
@@ -428,12 +478,58 @@ img {
   background-color: rgba(255, 124, 124, 0.28);
 }
 
+@media screen and (max-width: 414px) {
+  .hero__title {
+    font-size: 25px !important;
+    line-height: 40px !important;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .media {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .app, .app-save, .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .header__buttons {
+    width: 150px;
+  }
+  .menu {
+    display: flex;
+    gap: 35px !important;
+  }
+  .card {
+    padding: 25px 25px !important;
+  }
+  .card__row {
+    margin-top: 0px !important;
+  }
+  .card__button {
+    margin-top: 10px !important;
+  }
+  .caption {
+    font-size: 45px !important;
+    padding-bottom: 20px !important;
+  }
+  .circle {
+    max-width: 330px !important;
+    max-height: 330px !important;
+  }
+  .page__title {
+    font-size: 35px !important;
+  }
+}
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: url(/img/begraund.jpg);
+  background: url(../img/begraund.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -602,22 +698,22 @@ img {
   border-radius: 10px;
   border: none;
   outline: none;
-  background-image: url(/img/flight_takeoff_black_24dp.svg);
+  background-image: url(../img/flight_takeoff_black_24dp.svg);
   background-position: 10px 50%;
   background-repeat: no-repeat;
   background-size: 24px 24px;
 }
 
 .input_arrival {
-  background-image: url(/img/flight_land_black_24dp\ 1\ \(1\).svg);
+  background-image: url(../img/flight_land_black_24dp\ 1\ \(1\).svg);
 }
 
 .input_inventory {
-  background-image: url(/img/inventory_2_black_24dp\ 1\ \(1\).svg);
+  background-image: url(../img/inventory_2_black_24dp\ 1\ \(1\).svg);
 }
 
 .input_event {
-  background-image: url(/img/event_black_24dp\ 1\ \(1\).svg);
+  background-image: url(../img/event_black_24dp\ 1\ \(1\).svg);
 }
 
 .footer {
@@ -662,27 +758,6 @@ img {
   gap: 30px;
 }
 
-@media screen and (min-width: 576px) {
-  .hero__title {
-    margin-bottom: 50px;
-  }
-  .media {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  .app .app-save {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-  }
-  .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .media__link {
   width: 40px;
   height: 40px;
